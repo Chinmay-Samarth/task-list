@@ -1,4 +1,4 @@
-#My First React Project
+### My First React Project
 
 I had already learned the basics of react from sololearn.
 I wanted to explore project based learning for better understanding of react and redux
