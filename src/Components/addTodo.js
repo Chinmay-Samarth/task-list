@@ -4,6 +4,8 @@ import addTodo from "./action";
 import { connect } from "react-redux";
 
 
+//!Add Todo form
+//?Creates form which handles the input for todos
 function AddTodo(props){
     const [todo, setTodo] = useState("")
 
@@ -13,6 +15,7 @@ function AddTodo(props){
 
     function handleSubmit(e){
         if (todo!=""){
+            //?This is dispatch
             props.addTodo(todo)
             setTodo('');
         }
@@ -25,10 +28,12 @@ function AddTodo(props){
     </form>
 }
 
+//!Matching dispatch to props
 const mapDispatchToProps={
     addTodo
 }
 
+//?Connection between addTodo and AddTodo
 const el = connect(null, mapDispatchToProps)(AddTodo)
 
 export default el
