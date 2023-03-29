@@ -21,8 +21,8 @@ function ListTodo(props){
     let arr = props.list;
     const listItems = arr.map((val,index)=>
     <li key={index} className="list-group-item py-2 m-1" >{val} &ensp;&ensp;&ensp;&ensp; 
-    <input type="button" value="Delete" name={val} className="bg-danger text-light p-2 border border-none rounded" onClickCapture={deleteTodo} />
-    <input type="button" value="Done" name={val} className=" bg-success text-light p-2 border border-none rounded" onClickCapture={doneTodo}/></li>)
+    <input type="button" value="Delete" name={val} className="bg-danger text-light p-2 m-1 border border-none rounded" onClickCapture={deleteTodo} />
+    <input type="button" value="Done" name={val} className=" bg-success text-light p-2 m-1 border border-none rounded" onClickCapture={doneTodo}/></li>)
 
     return <ul className="list-group list-group-flush">{listItems}</ul>
 }

@@ -5,7 +5,7 @@ import '../App.css'
 function Product(props){
 
     return <div className="m-2 border border-dark rounded w-25 p-2 ">
-        <p className="my-2">Completed</p><p className="my-2 text-danger ">{props.com}</p>
+        <p className="my-2">Completed</p><p className="my-2 text-success ">{props.com}</p>
     </div>
 }
 

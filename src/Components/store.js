@@ -11,8 +11,13 @@ function reducer(state = {list:['ask'], com:0}, action){
             list:[...state.list, action.todo]}
         case "DEL_TODO":
             const ind = state.list.indexOf(action.todo)
-            console.log(ind)
             state.list.splice(ind, 1,)
+            return {...state,
+            list:[...state.list]}
+        case "DONE_TODO":
+            const indd = state.list.indexOf(action.todo)
+            state.list.splice(indd, 1,)
+            state.com++;
             return {...state,
             list:[...state.list]}
         default:
